@@ -46,12 +46,14 @@ class DummySendGridClient
 
     /**
      * @param Mail $mail
+     *
      * @return $this
      */
     public function post(Mail $mail)
     {
         $to = $mail->getPersonalizations()[0]->getTos()[0]->getEmail();
-        $from = $mail->getFrom()->getEmail();
+        $from = $mail->getFrom()
+                     ->getEmail();
         $subject = $mail->getSubject();
 
         $errors = [];

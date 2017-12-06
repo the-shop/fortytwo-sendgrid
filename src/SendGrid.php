@@ -16,6 +16,13 @@ use SendGrid\Mail as SendGridEmail;
  */
 class SendGrid extends Mailer
 {
+    /**
+     * @param MailInterface $mail
+     *
+     * @return string
+     * @throws ValidationException
+     * @throws \Exception
+     */
     public function send(MailInterface $mail)
     {
         $emailFrom = $mail->getFrom();

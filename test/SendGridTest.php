@@ -2,10 +2,10 @@
 
 namespace Framework\SendGrid\Test;
 
-use Framework\Base\Test\UnitTest;
-use Framework\SendGrid\SendGrid;
 use Framework\Base\Application\Exception\ValidationException;
 use Framework\Base\Mailer\Mail;
+use Framework\Base\Test\UnitTest;
+use Framework\SendGrid\SendGrid;
 
 /**
  * Class SendGridTest
