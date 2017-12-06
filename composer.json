@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "the-shop/fortytwo-base": "^0.1.1",
+    "the-shop/fortytwo-base": "^0.1.3",
     "sendgrid/sendgrid": "~6.0"
   },
   "require-dev": {

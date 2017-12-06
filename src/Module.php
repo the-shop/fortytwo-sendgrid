@@ -4,8 +4,15 @@ namespace Framework\SendGrid;
 
 use Framework\Base\Module\BaseModule;
 
+/**
+ * Class Module
+ * @package Framework\SendGrid
+ */
 class Module extends BaseModule
 {
+    /**
+     * @inheritdoc
+     */
     public function bootstrap()
     {
         // Let's read all files from module config folder and set to Configuration
