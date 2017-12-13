@@ -40,12 +40,12 @@ class SendGrid extends Mailer
 
         $body = [];
 
-        if (empty($htmlBody) === false) {
-            $body[] = new Content('text/html', $htmlBody);
-        }
-
         if (empty($textBody) === false) {
             $body[] = new Content('text/plain', $textBody);
+        }
+
+        if (empty($htmlBody) === false) {
+            $body[] = new Content('text/html', $htmlBody);
         }
 
         if (empty($body) === true) {
